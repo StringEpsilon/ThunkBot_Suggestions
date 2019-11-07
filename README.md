@@ -16,6 +16,7 @@ Bug reports and suggestions for ThunkBot
 
 **Aliases**: `r`
 
+---
 ### episode
 
 **Description**: Posts a link to the episode of the number you specified.
@@ -31,6 +32,7 @@ Note: The "THUNK 60" videos are not supported.
 
 **Aliases**: `ep`, `thunk`, `THUNK`
 
+---
 ### pun
 
 **Description**: Quotes the intro from the specified episode.
@@ -44,22 +46,20 @@ Note: Episode 0 and the "THUNK 60" episodes don't have an intro.
 | episode | numeric or "random" | random | The episode number you want to get the quote from (e.g. "100" or "164.5"). "random" or "rnd" selects a random episode to satiate your pun cravings.
 | force | "force" or "true | Admin only option. | 
 
+---
 ### goodbot
 
-**Description**: 
+**Description**: Let's ThunkBot (and everyone else) know that he was in fact a good boy.  
 
-Let's ThunkBot (and everyone else) know that he was in fact a good boy.  
-
-ThunkBot keeps track of how often and by whom he was thanked.
+ThunkBot keeps track of how often and by whom he was thanked. You can also thank him by reacting with `:heart:` emote to his messages.
 
 **Parameters**: None.
 
 **Aliases**: `thx`, `thanks`, `goodboy`
 
+---
 ### ping
 
-**Description**: 
-
-Answers with "pong".
+**Description**: Answers with "pong".
 
 **Parameters**: None.
