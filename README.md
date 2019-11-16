@@ -3,6 +3,34 @@ Bug reports and suggestions for ThunkBot
 
 ## ThunkBot command documentation
 
+### addcountry
+
+**Description**: Adds the specified country "role" to your profile.
+
+**Parameters**:
+
+| name | format | default | description |
+|---|---|---|---|
+| name | string | - | Name of the country you want added to your profile.
+
+See [this list of available countries](./CountryHelp.md) and their names / aliases.
+
+**Aliases**: `country`, `setcountry`
+
+### addcountry
+
+**Description**: Clear all countires (or just the specified one) 'roles' from your profile.
+
+**Parameters**:
+
+| name | format | default | description |
+|---|---|---|---|
+| name | string | - | Optional. Specify which of your assigned countries you want to remove.
+
+See [this list of available countries](./CountryHelp.md) and their names / aliases.
+
+**Aliases**: -
+
 ### roll
 
 **Description**: Rolls the specified dice.
@@ -56,6 +84,15 @@ ThunkBot keeps track of how often and by whom he was thanked. You can also thank
 **Parameters**: None.
 
 **Aliases**: `thx`, `thanks`, `goodboy`
+
+---
+### bug
+
+**Description**: Posts the link to this GitHub repository.
+
+**Parameters**: None.
+
+**Aliases**: `issue`, `feedback`, `ticket`, `idea`,
 
 ---
 ### ping
