@@ -17,7 +17,7 @@ See [this list of available countries](./CountryHelp.md) and their names / alias
 
 **Aliases**: `country`, `setcountry`
 
-### addcountry
+### clearcountry
 
 **Description**: Clear all countires (or just the specified one) 'roles' from your profile.
 
