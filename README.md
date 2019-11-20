@@ -25,3 +25,7 @@ The Bot keeps track of the following data:
 4) The bot logs [exceptions](https://en.wikipedia.org/wiki/Exception_handling) that occur during event handling and command execution. I keep user related information out of these logs to the best of my ability.
    
 Note: Number 1 and 2 are strictly separated. The bot does not keep track of how many times each user used a specific command.
+
+### Privacy and  `!census`
+
+The `!census` command (admin only) iterates through each member of the discord server and counts the assigned roles. This information is available to any user of the server anyway. ThunkBot does not keep any additional records.
