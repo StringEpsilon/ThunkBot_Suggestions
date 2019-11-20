@@ -3,100 +3,25 @@ Bug reports and suggestions for ThunkBot
 
 ## ThunkBot command documentation
 
-### addcountry
+[Available here](./Commands.md)
 
-**Description**: Adds the specified country "role" to your profile.
+## Other functionality
 
-**Parameters**:
+* Automatically sets idle status after 15 minutes of no server activity. And then plays ominous video games.
+* Keeps track of praise (either via `:heart:` reaction to commands or via `!goodbot`
+* Keeps track of most used commands and who invoked the most commands.
+* Can automatically respond to or add reactions to messages with certain keywords
+   * For example: If you link to TVTropes, ThunkBot will post a warning about the dangers of that site.
+   * If you are bothered by one of these reactions, ThunkBot has an exception list for each. 
+* Notifies the owner (me) if shut down.
 
-| name | format | default | description |
-|---|---|---|---|
-| name | string | - | Name of the country you want added to your profile.
+## Privacy
 
-See [this list of available countries](./CountryHelp.md) and their names / aliases.
+The Bot keeps track of the following data:
 
-**Aliases**: `country`, `setcountry`
-
-### clearcountry
-
-**Description**: Clear all countires (or just the specified one) 'roles' from your profile.
-
-**Parameters**:
-
-| name | format | default | description |
-|---|---|---|---|
-| name | string | - | Optional. Specify which of your assigned countries you want to remove.
-
-See [this list of available countries](./CountryHelp.md) and their names / aliases.
-
-**Aliases**: -
-
-### roll
-
-**Description**: Rolls the specified dice.
-
-**Parameters**:
-
-| name | format | default | description |
-|---|---|---|---|
-| dicepool | XdY\[+/-n\] | 1d6 | Describes the dicepool you want to roll. You can specify up to 1000 sides and 100 dice (100d1000). Amount defaults to 1 (!roll d8 rolls 1d8). Default die is a d6 (!roll 10 rolls 10d6)
-| reporter | string | "min" | Option to change how the roll result will be presented. Available: min, verbose, average, coin, sr, unique.
-
-**Aliases**: `r`
-
----
-### episode
-
-**Description**: Posts a link to the episode of the number you specified.
-
-Note: The "THUNK 60" videos are not supported.
-
-**Parameters**:
-
-| name | format | default | description |
-|---|---|---|---|
-| episode | numeric or "random" | random | The episode number you want to see (e.g. "100" or "164.5"). "random" or "rnd" selects a random episode for you to enjoy.
-| force | "force" or "true | Admin only option. | 
-
-**Aliases**: `ep`, `thunk`, `THUNK`
-
----
-### pun
-
-**Description**: Quotes the intro from the specified episode.
-
-Note: Episode 0 and the "THUNK 60" episodes don't have an intro. 
-
-**Parameters**:
-
-| name | format | default | description |
-|---|---|---|---|
-| episode | numeric or "random" | random | The episode number you want to get the quote from (e.g. "100" or "164.5"). "random" or "rnd" selects a random episode to satiate your pun cravings.
-| force | "force" or "true | Admin only option. | 
-
----
-### goodbot
-
-**Description**: Let's ThunkBot (and everyone else) know that he was in fact a good boy.  
-
-ThunkBot keeps track of how often and by whom he was thanked. You can also thank him by reacting with `:heart:` emote to his messages.
-
-**Parameters**: None.
-
-**Aliases**: `thx`, `thanks`, `goodboy`
-
----
-### bug
-
-**Description**: Posts the link to this GitHub repository.
-
-**Parameters**: None.
-
-**Aliases**: `issue`, `feedback`, `ticket`, `idea`,
-
----
-### ping
-
-**Description**: Answers with "pong".
-
-**Parameters**: None.
+1) How many times each user invoked a command
+2) How many times each command was invoked
+3) How many times the bot was thanked (but not by whom)
+4) The bot logs [exceptions](https://en.wikipedia.org/wiki/Exception_handling) that occur during event handling and command execution. I keep user related information out of these logs to the best of my ability.
+   
+Note: Number 1 and 2 are strictly separated. The bot does not keep track of how many times each user used a specific command.
