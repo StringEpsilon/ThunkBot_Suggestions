@@ -95,3 +95,36 @@ ThunkBot keeps track of how often and by whom he was thanked. You can also thank
 **Description**: Answers with "pong".
 
 **Parameters**: None.
+
+---
+
+### gamelist
+
+**Description**: Admin only. Displays the current list of games ThunkBot keeps in escrow. All game keys are kindly gifted away by other people on the server. Please say thank you to whoever gave away the game you took.
+
+**Special note**: Unlike any other command output, ThunkBot will edit his latest reply to this particular command as people claim and donate games.
+
+**Parameters**: None.
+
+### claimgame
+
+**Description**: ThunkBot will send you the stored game key via DM and cross the game off his list. 
+
+**Parameters**:
+
+| name | format | default | description |
+|---|---|---|---|
+| gameId | numeric | - | The number of the game you want.
+
+### donategame
+
+**Description**: Add a new game to the give-away pile! Thank you very much!
+
+**Special note:** ThunkBot will delete your message if you use this command in a public channel. Just to make sure nobody snags the game unnoticed. But you should just use this via DM anyway.
+
+**Parameters**:
+
+| name | format | default | description |
+|---|---|---|---|
+| name | any | - | The name of the game. If it's more than one word, use quotation marks: `"Portal 2"` is valid. `Portal 2` without the quotation marks is invalid. 
+| key | any | - | The key for the game. Again, if it contains spaces, use quotation marks.
