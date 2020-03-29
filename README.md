@@ -23,6 +23,8 @@ The Bot keeps track of the following data:
 2) How many times each command was invoked
 3) How many times the bot was thanked (but not by whom)
 4) The bot logs [exceptions](https://en.wikipedia.org/wiki/Exception_handling) that occur during event handling and command execution. I keep user related information out of these logs to the best of my ability.
+4) If you give a game kay away via `!DonateGame`, ThunkBot will remember the game name, the game key and your display name at the time of invoking the command.
+5) If you use `!claimGame`, ThunkBot will remember what game you claimed for yourself.
    
 Note: Number 1 and 2 are strictly separated. The bot does not keep track of how many times each user used a specific command.
 
