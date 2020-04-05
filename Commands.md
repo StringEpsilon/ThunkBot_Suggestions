@@ -1,3 +1,5 @@
+**Note:** For voice chat related commands, [click here](./Vox_Commands.md).
+
 ### addcountry
 
 **Description**: Adds the specified country "role" to your profile.
@@ -106,6 +108,8 @@ ThunkBot keeps track of how often and by whom he was thanked. You can also thank
 
 **Parameters**: None.
 
+---
+
 ### claimgame
 
 **Description**: ThunkBot will send you the stored game key via DM and cross the game off his list. 
@@ -115,6 +119,8 @@ ThunkBot keeps track of how often and by whom he was thanked. You can also thank
 | name | format | default | description |
 |---|---|---|---|
 | gameId | numeric | - | The number of the game you want.
+
+---
 
 ### donategame
 
