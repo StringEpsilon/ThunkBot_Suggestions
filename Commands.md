@@ -14,9 +14,11 @@ See [this list of available countries](./CountryHelp.md) and their names / alias
 
 **Aliases**: `country`, `setcountry`
 
+**Example**: `!addcountry EU`
+
 ### clearcountry
 
-**Description**: Clear all countires (or just the specified one) 'roles' from your profile.
+**Description**: Clear all countries (or just the specified one) 'roles' from your profile.
 
 **Parameters**:
 
@@ -27,6 +29,11 @@ See [this list of available countries](./CountryHelp.md) and their names / alias
 See [this list of available countries](./CountryHelp.md) and their names / aliases.
 
 **Aliases**: -
+
+
+**Example**: `!clearcountry EU` - removes just "EU" from your profile.
+
+**Example**: `!clearcountry` - removes all set countries.
 
 ### roll
 
@@ -40,6 +47,9 @@ See [this list of available countries](./CountryHelp.md) and their names / alias
 | reporter | string | "min" | Option to change how the roll result will be presented. Available: min, verbose, average, coin, sr, unique.
 
 **Aliases**: `r`
+
+**Example**: `!roll 1d6` - rolls one 6-sided die.
+**Example**: `!roll 10d20` - rolls 10 20-sided dice.
 
 ---
 ### episode
@@ -57,6 +67,8 @@ Note: The "THUNK 60" videos are not supported.
 
 **Aliases**: `ep`, `thunk`, `THUNK`
 
+**Example**: `!episode 100` - will post the link to episode 100.
+
 ---
 ### pun
 
@@ -70,6 +82,9 @@ Note: Episode 0 and the "THUNK 60" episodes don't have an intro.
 |---|---|---|---|
 | episode | numeric or "random" | random | The episode number you want to get the quote from (e.g. "100" or "164.5"). "random" or "rnd" selects a random episode to satiate your pun cravings.
 | force | "force" or "true | Admin only option. | 
+
+**Example**: `!pun 100` - will post the intro transcription of episode 100
+**Example**: `!pun` - will post a random intro transcription.
 
 ---
 ### goodbot
