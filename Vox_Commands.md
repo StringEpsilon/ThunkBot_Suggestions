@@ -1,4 +1,20 @@
-### vox_notify
+### vox
+
+**Description**: Group of commands to manage your voice chat notification settings.
+
+**Note**: If used on it's own, it works like `!vox settings`.
+
+---
+
+### vox settings
+
+**Description**: Tells you what your current settings are.
+
+**Example**: `!vox settings`
+
+---
+
+### vox notify
 
 **Description**: Enables notifications via DM for people joining a voice channel.
 
@@ -12,47 +28,73 @@ This can also be used to change the status at which you want to be notified. See
 
 The status values are treated hierarchical. If you specify "Idle" you will be notified when you are either Online or Idle. If you specify "Offline", you will always get a DM.
 
-**Example usage**: `!vox_notify Online`
+**Example usage**: `!vox notify Online`
 
 ---
 
-### vox_unnotify
+### vox unnotify
 
-**Description**: Disables notifications for voice activity. This command also clears your whitelist (compare `!vox_addusers`)
+**Description**: Disables notifications for voice activity. Thunkbot will remember your settings for re-activation.
 
-**Example usage**: `!vox_unnotify`
+**Example usage**: `!vox unnotify`
 
 ---
 
-### vox_addusers
+### vox filter
 
-**Description**: Add people to the whitelist for voice chat notifications, so that you'll only be notified about them.
+**Description**: Commands to modify your filter settings for notifications
+
+### vox filter whitelist
+
+**Description**: Only receive notifications currently on your filter list.
+
+**Note**: Doesn't change the content of your filter.
+
+---
+
+### vox filter blacklist
+
+**Description**: You won't receive notifications currently on your filter list.
+
+**Note**: Doesn't change the content of your filter.
+
+---
+
+### vox filter disable
+
+**Description**: Disable filtering, but keeps the list intact for later reactivation
+
+---
+
+### vox filter add
+
+**Description**: Add people to the filter for voice chat notifications.
 
 | name | format | default | description |
 |---|---|---|---|
 | users | list of strings | - | The users you want to be notified about, as plain text. No @Mentions!
 
-**Example usage 1**: `!vox_addusers JustJosh` - to add just Josh.
+**Example usage 1**: `!vox filter add JustJosh` - to add just Josh.
 
-**Example usage 2**: `!vox_addusers John Will` - to add both "John" and "Will".
+**Example usage 2**: `!vox filter add John Will` - to add both "John" and "Will".
 
-**Example usage 3**: `!vox_addusers "Generic User"` - to add "Generic User" - for when a username contains a space.
+**Example usage 3**: `!vox filter add "Generic User"` - to add "Generic User" - for when a username contains a space.
 
 
 ---
 
-### vox_removeusers
+### vox filter remove
 
-**Description**: Remove people from the notification whitelist.
+**Description**: Remove people from the notification filter.
 
-Note: If this clears your whitelist, ThunkBot will then again notify you about all voice chat activity.
+Note: If this clears the list and you've set it up as a whitelist, ThunkBot will then again notify you about all voice chat activity.
 
 | name | format | default | description |
 |---|---|---|---|
-| users | list of strings | - | The users you want to remove from the whitelist. No @Mentions!
+| users | list of strings | - | The users you want to remove from the filter. No @Mentions!
 
-**Example usage 1**: `!vox_removeusers JustJosh` - to remove just Josh.
+**Example usage 1**: `!vox filter remove JustJosh` - to remove just Josh.
 
-**Example usage 2**: `!vox_removeusers John Will` - to remove both "John" and "Will".
+**Example usage 2**: `!vox filter remove John Will` - to remove both "John" and "Will".
 
-**Example usage 3**: `!vox_removeusers "Generic User"` - to remove "Generic User" - for when a username contains a space.
+**Example usage 3**: `!vox filter remove "Generic User"` - to remove "Generic User" - for when a username contains a space.
